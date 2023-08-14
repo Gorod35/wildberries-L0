@@ -1,10 +1,422 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Wildberries</title>
-  </head>
-  <body>
-    <h1>Hello</h1>
-  </body>
-</html> 
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wildberries - модный интернет магазин</title>
+</head>
+
+<body class="page">
+  <header class="header">
+    <div class="header__container">
+      <div class="header__logo-container">
+        <button class="header__burger">
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line header__burger-line-3"></span>
+        </button>
+        <a href="#" class="header__logo">
+          <h1 class="header__logo-title">ТОВАРЫ <br class="header__logo-br">И ТОЧКА</h1>
+        </a>
+        <button class="header__search-mobile-button"></button>
+      </div>
+      <form action="" class="header__search">
+        <input type="text" placeholder="Я ищу..." class="header__search-input">
+        <button class="header__search-button"></button>
+      </form>
+      <nav class="header__navigation-list">
+        <ul class="header__navigation">
+          <li class="header__navigation-item">
+            <a href="#" class="header__navigation-link">
+              <div class="header__navigation-link-icon header__navigation-link-icon-profile"></div>
+              <span class="header__navigation-link-text">Профиль</span>
+            </a>
+          </li>
+          <li class="header__navigation-item">
+            <a href="#" class="header__navigation-link">
+              <div class="header__navigation-link-icon header__navigation-link-icon-basket"></div>
+              <span class="header__navigation-link-text">Корзина</span>
+              <span class="header__navigation-basket-count">3</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__background"></div>
+  </header>
+  <main>
+    <div class="main__container">
+      <div action="" class="basket__form">
+        <div class="basket-form__basket-section">
+          <h2 class="basket-section__title">Корзина</h2>
+          <div class="basket-section__accordion">
+            <div class="accordion__header">
+              <div class="accordion__choose">
+                <input type="checkbox" class="checkbox">
+                <label class="accordion__label">Выбрать всё</label>
+              </div>
+              <button class="accordion__icon"></button>
+            </div>
+            <ul class="accordion__list">
+              <template>
+                <li class="accordion__list-item">
+                  <div class="list-item__good">
+                    <input type="checkbox" class="checkbox good__checkbox">
+                    <div class="list-item__good-img"></div>
+                    <div class="list-item__good-info">
+                      <div class="list-item__price list-item__price_mobile">
+                        <span class="list-item__price-new">522 сом</span>
+                        <span class="list-item__price-old">1051 сом</span>
+                      </div>
+                      <h4 class="good-info__good-brand">Футболка UZcotton мужская</h4>
+                      <div class="good-info__properties">
+                        <span>Цвет: белый</span>
+                        <span class="properties__mob">Размер: 56</span>
+                      </div>
+                      <div class="good-info__store">
+                        <span>Коледино WB</span>
+                        <div class="good-info__salesman">
+                          <span>ООО Вайлдберриз</span>
+                          <button class="salesman__info-button"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-item-two">
+                    <div class="list-item__interactive">
+                      <div class="list-item__counter">
+                        <div class="list-item__count">
+                          <button class="count__minus">-</button>
+                          <input type="number" class="count__numeric">
+                          <button class="count__plus">+</button>
+                        </div>
+                        <span class="counter__text">Осталось 2 шт.</span>
+                      </div>
+                      <div class="list-item__btn">
+                        <button class="btn__like"></button>
+                        <button class="btn__del"></button>
+                      </div>
+                    </div>
+                    <div class="list-item__price list-item__price_computer">
+                      <span class="list-item__price-new">522 сом</span>
+                      <span class="list-item__price-old">1051 сом</span>
+                    </div>
+                  </div>
+                </li>
+              </template>
+            </ul>
+          </div>
+          <div class="basket-section__unavailable">
+            <div class="unavailable__header">
+              <h3 class="unavailable__title">Отсутствуют · 3 товара</h3>
+              <button class="accordion__icon"></button>
+            </div>
+            <ul class="unavailable__list">
+              <li class="unavailable__list-item">
+                <div class="list-item__good">
+                  <div class="list-item__good-img list-item__good-img_unavailable-section"></div>
+                  <div class="list-item__good-info">
+                    <h4 class="good-info__good-brand good-info__good-brand_unavailable-section">Футболка UZcotton
+                      мужская</h4>
+                    <div class="good-info__properties good-info__properties_unavailable-section">
+                      <span>Цвет: белый</span>
+                      <span class="properties__mob">Размер: 56</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-item__btn list-item__btn_unavailable-section">
+                  <button class="btn__like"></button>
+                  <button class="btn__del"></button>
+                </div>
+              </li>
+              <li class="unavailable__list-item">
+                <div class="list-item__good">
+                  <div class="list-item__good-img list-item__good-img_unavailable-section"></div>
+                  <div class="list-item__good-info">
+                    <h4 class="good-info__good-brand good-info__good-brand_unavailable-section">Футболка UZcotton
+                      мужская</h4>
+                    <div class="good-info__properties good-info__properties_unavailable-section">
+                      <span>Цвет: белый</span>
+                      <span class="properties__mob">Размер: 56</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-item__btn list-item__btn_unavailable-section">
+                  <button class="btn__like"></button>
+                  <button class="btn__del"></button>
+                </div>
+              </li>
+              <li class="unavailable__list-item">
+                <div class="list-item__good">
+                  <div class="list-item__good-img list-item__good-img_unavailable-section"></div>
+                  <div class="list-item__good-info">
+                    <h4 class="good-info__good-brand good-info__good-brand_unavailable-section">Футболка UZcotton
+                      мужская</h4>
+                    <div class="good-info__properties good-info__properties_unavailable-section">
+                      <span>Цвет: белый</span>
+                      <span class="properties__mob">Размер: 56</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-item__btn list-item__btn_unavailable-section">
+                  <button class="btn__like"></button>
+                  <button class="btn__del"></button>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="basket-section__basket__delivery basket-section">
+            <div class="basket-delivery__header basket-section__header">
+              <h3 class="basket-delivery__title">Способ доставки</h3>
+              <button class="basket-delivery__btn-edit">Изменить</button>
+            </div>
+            <div class="basket-delivery__methods">
+              <div class="selected-adress__wrap">
+                <span class="selected-adress__label">Пункт выдачи</span>
+                <div class="selected-adress__data">
+                  <span class="selected-adress__item">Бишкек, улица Ахматбека Суюмбаева, 12/1</span>
+                  <div class="selected-adress__other">
+                    <div class="adress-rate">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M6.69769 1.14922C6.43817 0.528396 5.56198 0.528387 5.30244 1.14919L6.69769 1.14922ZM5.30244 1.14919L4.14719 3.90977L1.19202 4.16613C0.519264 4.22467 0.262282 5.05966 0.759713 5.49464L3.00514 7.45915L2.33207 10.3824C2.18436 11.0238 2.87792 11.5567 3.46133 11.2023L6.00032 9.65611L8.53797 11.2015C9.12269 11.5588 9.81568 11.0227 9.66861 10.3826L8.99549 7.45915L11.2402 5.49537C11.7385 5.05961 11.4793 4.22519 10.8083 4.16667L7.85294 3.91029L6.69769 1.14922"
+                          fill="#FF970D" />
+                      </svg>
+                      <span>4.99</span>
+                    </div>
+                    <div class="office-hourse">Ежедневно с 10 до 21 </div>
+                  </div>
+                </div>
+              </div>
+              <div class="selected-adress__wrap">
+                <span class="selected-adress__label">Стоимость доставки</span>
+                <div class="selected-adress__data">
+                  <span class="selected-adress__item">Бесплатно</span>
+                </div>
+              </div>
+              <div class="selected-adress__wrap">
+                <span class="selected-adress__label">5—6 февраля</span>
+                <div class="delivery__date-items">
+                  <div class="devilery__date-item">
+                    <div class="devilery__date-img"></div>
+                    <span class="delivery__date-counter"></span>
+                  </div>
+                  <div class="devilery__date-item">
+                    <div class="devilery__date-img"></div>
+                    <span class="delivery__date-counter">184</span>
+                  </div>
+                  <div class="devilery__date-item">
+                    <div class="devilery__date-img"></div>
+                    <span class="delivery__date-counter">2</span>
+                  </div>
+                </div>
+              </div>
+              <div class="selected-adress__wrap">
+                <span class="selected-adress__label">7—8 февраля</span>
+                <div class="delivery__date-items">
+                  <div class="devilery__date-item">
+                    <div class="devilery__date-img"></div>
+                    <span class="delivery__date-counter"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="basket-delivery__info">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0 9.99976C0 15.5226 4.47715 19.9998 10 19.9998C15.5228 19.9998 20 15.5226 20 9.99976C20 4.47691 15.5228 -0.000244141 10 -0.000244141C4.47715 -0.000244141 0 4.47691 0 9.99976ZM18.1818 9.99973C18.1818 14.5184 14.5187 18.1816 9.99997 18.1816C5.48128 18.1816 1.81815 14.5184 1.81815 9.99973C1.81815 5.48103 5.48128 1.81791 9.99997 1.81791C14.5187 1.81791 18.1818 5.48103 18.1818 9.99973Z"
+                    fill="url(#paint0_linear_1_2)" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M5.98273 8.6548C6.40206 8.29538 7.03336 8.34394 7.39278 8.76327L9.62861 11.3717L13.6826 6.58061C14.0394 6.15901 14.6704 6.10643 15.092 6.46317C15.5136 6.81991 15.5662 7.45089 15.2094 7.8725L10.7761 13.1118C10.1795 13.817 9.09334 13.8204 8.49219 13.1191L5.87427 10.0648C5.51485 9.64552 5.56341 9.01422 5.98273 8.6548Z"
+                    fill="url(#paint1_linear_1_2)" />
+                  <defs>
+                    <linearGradient id="paint0_linear_1_2" x1="3" y1="0.999939" x2="10" y2="19.9998"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#0CD38B" />
+                      <stop offset="1" stop-color="#0CB477" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_1_2" x1="8" y1="6.5" x2="9.50888" y2="14.8594"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#0CD38B" />
+                      <stop offset="1" stop-color="#0CB477" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <span class="delivery__return-text">
+                  Обратная доставка товаров на склад при отказе —
+                  <button class="delivery__return-button">
+                    бесплатно
+                  </button>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="basket-section__basket__delivery basket-section">
+            <div class="basket-delivery__header basket-section__header">
+              <h3 class="basket-delivery__title">Способ оплаты</h3>
+              <button class="basket-delivery__btn-edit">Изменить</button>
+            </div>
+            <div class="basket-pay__container">
+              <div class="card__wrap">
+                <span class="card__icon"></span>
+                <div class="card__info">
+                  <span class="card-num">1234 56•• •••• 1234</span>
+                  <span class="card-exp">01/30</span>
+                </div>
+              </div>
+              <div class="basket-pay__info">
+                <span>Спишем оплату с карты при получении</span>
+              </div>
+            </div>
+          </div>
+          <div class="basket-section__basket__recipient basket-section">
+            <div class="basket-recipient__header basket-section__header">
+              <h3 class="basket-delivery__title">Получатель</h3>
+            </div>
+            <form id="recipient" class="basket-section__reciever">
+              <div class="firstLine">
+                <label class="reciever__label">
+                  <span class="form__name">Имя</span>
+                  <input class="reciever__input" type="text" id="name" name="name" required placeholder="Имя">
+                  <span class="form__valid">Укажите имя</span>
+                </label>
+                <label class="reciever__label">
+                  <span class="form__name">Фамилия</span>
+                  <input class="reciever__input" type="text" id="lastName" name="lastName" required
+                    placeholder="Фамилия">
+                  <span class="form__valid">Укажите фамилию</span>
+                </label>
+              </div>
+              <div class="secondLine">
+                <label class="reciever__label">
+                  <span class="form__name">Почта</span>
+                  <input class="reciever__input" type="email" id="email" name="email" required placeholder="Почта">
+                  <span class="form__valid">Укажите почту</span>
+                </label>
+                <label class="reciever__label">
+                  <span class="form__name">Телефон</span>
+                  <input class="reciever__input" class="tel" type="tel" id="phone" name="phone" placeholder="Телефон"
+                    required>
+                  <span class="form__valid">Укажите телефон</span>
+                </label>
+                <label class="reciever__label">
+                  <span class="form__name">ИНН</span>
+                  <input class="reciever__input reciever__input_inn" type="number" id="INN" name="INN" maxlength="10"
+                    required placeholder="ИНН">
+                  <span class="form__valid">Укажите ИНН</span><br>
+                  <span class="INN__description">Для таможенного оформления</span>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="basket-form__sidebar">
+          <div class="sidebar__sticky-wrap">
+            <div class="basket-section basket-order">
+              <div class="basket-order__sum">
+                <div class="sum-section sum-section__header">
+                  <span class="sum-section__title">Итого</span>
+                  <span class="sum-section__title">2 101 063 сом</span>
+                </div>
+                <div class="sum-section">
+                  <span class="">203 товара</span>
+                  <span class="">2 302 048 сом</span>
+                </div>
+                <div class="sum-section">
+                  <span class="">Скидка</span>
+                  <span class="">−200 985 сом</span>
+                </div>
+                <div class="sum-section">
+                  <span class="">Доставка</span>
+                  <span class="">Бесплатно</span>
+                </div>
+              </div>
+              <div class="basket-order__delivery">
+                <div class="block__header">
+                  <span class="block__title">Доставка в пункт выдачи</span>
+                  <span class="block__icon"></span>
+                </div>
+                <div class="delivery__info">
+                  <span class="delivery__text">Бишкек, улица Ахматбека Суюмбаева, 12/1</span>
+                  <span class="delivery__date">5–8 фев</span>
+                </div>
+                <div class="delivery__price-block">
+                  <span class="price-block__done"></span>
+                  <span class="price-block__text">
+                    Обратная доставка товаров на склад при отказе —
+                    <button class="price-block__button">бесплатно</button> </span>
+                </div>
+              </div>
+              <div class="basket-order__pay">
+                <div class="block__header">
+                  <span class="block__title">Оплата картой</span>
+                  <span class="block__icon"></span>
+                </div>
+                <div class="card__wrap">
+                  <span class="card__icon"></span>
+                  <div class="card__info card__info_delivery">
+                    <span class="card-num">1234 56•• •••• 1234</span>
+                  </div>
+                </div>
+                <div class="pay-block">
+                  <div class="pay-block__container">
+                    <input type="checkbox" class="checkbox">
+                    <span class="price-block__text">Списать оплату сразу</span>
+                  </div>
+                  <span>Спишем оплату с карты при получении</span>
+                </div>
+              </div>
+              <div class="basket-order__bottom">
+                <button class="basket-order__submit">Заказать</button>
+                <div class="basket-order__rules">
+                  <span class="rules__img"></span>
+                  <span class="rules__text">Соглашаюсь <a href="#" class="rules__text-btn">с правилами пользования
+                      торговой площадкой</a> и <a href="" class="rules__text-btn">возврата</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__bg"></div>
+    <div class="footer__container">
+      <span>© 2022 ООО «Товары и точка»</span>
+    </div>
+  </footer>
+  <div class="header-mob">
+    <ul class="header-mob__list">
+      <li class="header-mob__item">
+        <button class="header-mob__item-button header-mob__item-button-1" aria-label="Избранное">
+          <span class="header-mob__item-button-icon"></span>
+        </button>
+      </li>
+      <li class="header-mob__item">
+        <button class="header-mob__item-button header-mob__item-button-2" aria-label="Профиль">
+          <span class="header-mob__item-button-icon"></span>
+        </button>
+      </li>
+      <li class="header-mob__item">
+        <button class="header-mob__item-button header-mob__item-button-3" aria-label="Профиль">
+          <span class="header-mob__item-button-icon"></span>
+          <span class="header__navigation-basket-count" id="header-mob-basket-count">
+            3
+          </span>
+        </button>
+      </li>
+      <li class="header-mob__item">
+        <button class="header-mob__item-button header-mob__item-button-4" aria-label="Профиль">
+          <span class="header-mob__item-button-icon"></span>
+        </button>
+      </li>
+      <li class="header-mob__item">
+        <button class="header-mob__item-button header-mob__item-button-5" aria-label="Профиль">
+          <span class="header-mob__item-button-icon"></span>
+        </button>
+      </li>
+    </ul>
+  </div>
+</body>
+
+</html>

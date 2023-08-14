@@ -1,0 +1,13 @@
+@import url(../blocks/header/header.css);
+@import url(normalize.css);
+@import url(../fonts/segoe.css);
+@import url(../blocks/page/page.css);
+@import url(../blocks/main/main.css);
+@import url(../blocks/basket/basket.css);
+@import url(../blocks/basket/unavailable.css);
+@import url(../blocks/basket/delivery.css);
+@import url(../blocks/basket/pay.css);
+@import url(../blocks/basket/reciever.css);
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/basket/order.css);
+@import url(../blocks/header/header-mob.css);

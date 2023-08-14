@@ -1,0 +1,44 @@
+.card__icon {
+    display: inline-block;
+    background-image: url(../../images/Mir.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 4px;
+    height: 24px;
+    width: 32px;
+}
+
+.basket-pay__container {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card__info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.card__wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.basket-pay__info {
+    font-size: 13px;
+    line-height: 16px;
+    color: #9797AF;
+}
+
+@media (max-width: 1023.95px) {
+
+    .basket-pay__container {
+        margin-top: 8px;
+    }
+}

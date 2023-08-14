@@ -1,0 +1,26 @@
+.main__container {
+    margin: 10px 24px 0px 24px;
+    background-color: #F6F6FA;
+}
+
+.basket-section__title {
+    margin: 0px;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 600;
+    margin-bottom: 27px;
+}
+
+@media (max-width: 1023.95px) {
+    .main__container {
+        margin: 0;
+    }
+
+    .basket-section__accordion {
+        margin: 0px 16px;
+    }
+
+    .basket-section__title {
+        margin: 0px 16px 16px 16px;
+    }
+}
